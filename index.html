@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My E-Commerce Store</title>
+  <style>
+    /* General Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #ffecd2, #fcb69f);
+      color: #333;
+    }
+
+    header {
+      background: #ff6f61;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 2em;
+      font-weight: bold;
+    }
+
+    nav {
+      background: #ff9a76;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      width: 90%;
+      margin: 20px auto;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .product {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      padding: 15px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .product:hover {
+      transform: scale(1.05);
+    }
+
+    .product img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    .product h3 {
+      margin: 10px 0;
+      color: #ff6f61;
+    }
+
+    .product p {
+      font-size: 14px;
+      margin: 10px 0;
+    }
+
+    .product button {
+      background: #ff6f61;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .product button:hover {
+      background: #ff9a76;
+    }
+
+    .cart, .checkout {
+      background: white;
+      padding: 20px;
+      margin-top: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background: #ff6f61;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>🛒 My Colorful Store</header>
+
+  <nav>
+    <a href="#products">Products</a>
+    <a href="#cart">Cart</a>
+    <a href="#checkout">Checkout</a>
+  </nav>
+
+  <div class="container">
+
+    <!-- Product Section -->
+    <section id="products">
+      <h2>✨ Featured Products</h2>
+      <div class="products">
+        <div class="product">
+          <img src="https://via.placeholder.com/250x200?text=Clothes" alt="Clothes">
+          <h3>Stylish Clothes</h3>
+          <p>Trendy fashion wear for all seasons.</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="product">
+          <img src="https://via.placeholder.com/250x200?text=Electronics" alt="Electronics">
+          <h3>Cool Electronics</h3>
+          <p>Latest gadgets and devices.</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="product">
+          <img src="https://via.placeholder.com/250x200?text=Handmade+Crafts" alt="Crafts">
+          <h3>Handmade Crafts</h3>
+          <p>Unique handmade items for your home.</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section id="cart" class="cart">
+      <h2>🛍 Shopping Cart</h2>
+      <p>Your selected items will appear here.</p>
+    </section>
+
+    <!-- Checkout Section -->
+    <section id="checkout" class="checkout">
+      <h2>💳 Checkout</h2>
+      <form>
+        <label>Name:</label><br>
+        <input type="text" placeholder="Enter your name"><br><br>
+        <label>Email:</label><br>
+        <input type="email" placeholder="Enter your email"><br><br>
+        <label>Address:</label><br>
+        <textarea placeholder="Enter your address"></textarea><br><br>
+        <button type="submit">Place Order</button>
+      </form>
+    </section>
+
+  </div>
+
+  <footer>
+    © 2025 My Colorful Store | Designed with ❤️
+  </footer>
+
+</body>
+</html>
